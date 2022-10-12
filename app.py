@@ -16,7 +16,7 @@ def compress():
     imgbyte = base64.b64decode(imgb64)
     img = Image.open(BytesIO(imgbyte))
     x, y = img.size
-    base_width = 1366
+    base_width = 720
     if x > base_width or y > base_width:
         percent = base_width / float(x)
         hsize = int((float(y) * float(percent)))
